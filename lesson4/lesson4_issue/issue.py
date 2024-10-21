@@ -15,18 +15,18 @@ class Window(ThemedTk):
         #================================start topframe====================================
         topFrame = ttk.Frame(self,borderwidth=1,relief='groove')
         btn1 = ttk.Button(topFrame,text="加入購物車",style='Main.TButton')
-        btn1.pack(side='left',expand=True,fill='x',padx=10)
+        btn1.pack(side='left',expand=True,fill='both',padx=10)
         btn2 = ttk.Button(topFrame,text="我的最愛",style='Main.TButton')
-        btn2.pack(side='left',expand=True,fill='x')
+        btn2.pack(side='left',expand=True,fill='both')
         btn3 = ttk.Button(topFrame,text="個人資料",style='Main.TButton')
-        btn3.pack(side='left',expand=True,fill='x',padx=10)
+        btn3.pack(side='left',expand=True,fill='both',padx=10)
         topFrame.pack(padx=10,pady=(10,0),ipadx=10,ipady=10,expand=True,fill='both')
         #================================end topframe=====================================
 
         #================================start bottomframe================================
         bottomFrame = ttk.Frame(self,height=300,borderwidth=1,relief='groove')
-        bottomFrame.pack(padx=10,pady=10,expand=True,fill='both')
-
+      
+        #================================start leftframe================================
         leftFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
         btn1 = ttk.Button(leftFrame,text="Home",style='Main1.TButton')
         btn1.pack(expand=True,fill='x',padx=10,pady=5,ipady=50)
@@ -35,7 +35,7 @@ class Window(ThemedTk):
         btn3 = ttk.Button(leftFrame,text="Chat",style='Main1.TButton')
         btn3.pack(expand=True,fill='x',padx=10,pady=5,ipady=25)
         leftFrame.pack(padx=10,pady=10,side="left",expand=True,fill='both')
-        #================================end bottomframe==================================
+        #================================end leftframe================================
 
         #================================start centerframe================================
         centerFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
@@ -58,6 +58,8 @@ class Window(ThemedTk):
         btn3.pack(expand=True,fill='x',padx=10,pady=5,ipady=34)
         rightFrame.pack(padx=10,pady=10,side="right",expand=True,fill='both')
         #================================end rightframe=================================
+        bottomFrame.pack(padx=10,pady=10,expand=True,fill='both')
+        #================================end bottomframe==================================
 
 def main():
     window = Window(theme="arc")
