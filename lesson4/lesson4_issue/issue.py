@@ -12,7 +12,7 @@ class Window(ThemedTk):
         style.configure('Main2.TButton',font=("Arial",15,"italic"),foreground="red")
         style.configure('Main3.TButton',font=("Arial",15,"underline"),foreground="violet")
         style.configure('Main4.TButton',font=("Arial",15,"overstrike"),foreground="black")
-        #================================strat topframe====================================
+        #================================start topframe====================================
         topFrame = ttk.Frame(self,borderwidth=1,relief='groove')
         btn1 = ttk.Button(topFrame,text="加入購物車",style='Main.TButton')
         btn1.pack(side='left',expand=True,fill='x',padx=10)
@@ -23,7 +23,7 @@ class Window(ThemedTk):
         topFrame.pack(padx=10,pady=(10,0),ipadx=10,ipady=10,expand=True,fill='both')
         #================================end topframe=====================================
 
-        #================================strat bottomframe================================
+        #================================start bottomframe================================
         bottomFrame = ttk.Frame(self,height=300,borderwidth=1,relief='groove')
         bottomFrame.pack(padx=10,pady=10,expand=True,fill='both')
 
@@ -37,7 +37,7 @@ class Window(ThemedTk):
         leftFrame.pack(padx=10,pady=10,side="left",expand=True,fill='both')
         #================================end bottomframe==================================
 
-        #================================strat centerframe================================
+        #================================start centerframe================================
         centerFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
         btn1 = ttk.Button(centerFrame,text="已刪除",style='Main4.TButton')
         btn1.pack(expand=True,fill='x',padx=10,pady=5,ipady=40)
@@ -46,9 +46,9 @@ class Window(ThemedTk):
         btn3 = ttk.Button(centerFrame,text="已消失",style='Main4.TButton')
         btn3.pack(expand=True,fill='x',padx=10,pady=5,ipady=40)
         centerFrame.pack(padx=10,pady=10,side="left",expand=True,fill='both')
-        #================================strat centerframe=============================
+        #================================end centerframe=============================
 
-        #================================strat rightframe==============================
+        #================================start rightframe==============================
         rightFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
         btn1 = ttk.Button(rightFrame,text="按鈕1",style='Main3.TButton')
         btn1.pack(expand=True,fill='x',padx=10,pady=5,ipady=33)
