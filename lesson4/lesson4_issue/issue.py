@@ -23,7 +23,7 @@ class Window(ThemedTk):
         topFrame.pack(padx=10,pady=(10,0),ipadx=10,ipady=10,expand=True,fill='x')
 
         bottomFrame = ttk.Frame(self,height=300,borderwidth=1,relief='groove')
-        bottomFrame.pack(padx=10,pady=10)
+        bottomFrame.pack(padx=10,pady=10,expand=True,fill='x')
 
         leftFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
         btn1 = ttk.Button(leftFrame,text="Home",style='Main1.TButton')
@@ -32,7 +32,7 @@ class Window(ThemedTk):
         btn2.pack(expand=True,fill='x',padx=10,pady=5,ipady=25)
         btn3 = ttk.Button(leftFrame,text="Chat",style='Main1.TButton')
         btn3.pack(expand=True,fill='x',padx=10,pady=5,ipady=25)
-        leftFrame.pack(padx=10,pady=10,side="left")
+        leftFrame.pack(padx=10,pady=10,side="left",expand=True,fill='x')
 
         centerFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
         btn1 = ttk.Button(centerFrame,text="已刪除",style='Main4.TButton')
@@ -41,7 +41,7 @@ class Window(ThemedTk):
         btn2.pack(expand=True,fill='x',padx=10,pady=5,ipady=20)
         btn3 = ttk.Button(centerFrame,text="已消失",style='Main4.TButton')
         btn3.pack(expand=True,fill='x',padx=10,pady=5,ipady=40)
-        centerFrame.pack(padx=10,pady=10,side="left")
+        centerFrame.pack(padx=10,pady=10,side="left",expand=True,fill='x')
 
         rightFrame =ttk.Frame(bottomFrame,width=100,height=300,borderwidth=2,relief='groove')
         btn1 = ttk.Button(rightFrame,text="按鈕1",style='Main3.TButton')
@@ -50,7 +50,7 @@ class Window(ThemedTk):
         btn2.pack(expand=True,fill='x',padx=10,pady=5,ipady=33)
         btn3 = ttk.Button(rightFrame,text="按鈕3",style='Main3.TButton')
         btn3.pack(expand=True,fill='x',padx=10,pady=5,ipady=34)
-        rightFrame.pack(padx=10,pady=10,side="right")
+        rightFrame.pack(padx=10,pady=10,side="right",expand=True,fill='x')
 
 def main():
     window = Window(theme="arc")
