@@ -14,7 +14,7 @@ class Window(ThemedTk):
         
         #==============top Frame=============
         topFrame = ttk.Frame(self)
-        ttk.Label(topFrame,text='單選題',style='TopFrame.TLabel').pack()
+        ttk.Label(topFrame,text='請多選一',style='TopFrame.TLabel').pack()
         topFrame.pack(padx=20,pady=20)
         #==============end topFrame==========
 
@@ -22,7 +22,7 @@ class Window(ThemedTk):
         bottomFrame = ttk.Frame(self)
 
         label = ttk.Label(bottomFrame,text="What's your t-shirt size?")
-        label.pack(fill='x', padx=5, pady=5)
+        label.pack(fill='x', padx=10, pady=5)
         
         #用來儲存使用者在單選按鈕（Radiobutton）中選擇的值
         self.selected_size = tk.StringVar()
@@ -32,7 +32,7 @@ class Window(ThemedTk):
                 ('Extra Large', 'XL'),
                 ('Extra Extra Large', 'XXL'))
         
-        for size in sizes:
+        for size in sizes: 
             #建立Radiobutton(單選按鈕)
             r = ttk.Radiobutton(
                 bottomFrame,
@@ -41,8 +41,7 @@ class Window(ThemedTk):
                 #點擊時，儲存點擊的值在self.selected_size = tk.StringVar()
                 value=size[1],
                 #點擊後的文字
-                variable=self.selected_size
-            )
+                variable=self.selected_size)
             r.pack(fill='x', padx=5, pady=5)
 
         # button
