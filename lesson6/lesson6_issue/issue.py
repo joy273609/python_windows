@@ -24,6 +24,7 @@ for items in data["records"]:
 print(eachdata)
 
 ### STEP.4-新增資料庫
+#為date和sitename欄位設置UNIQUE約束，避免插入重複的記錄
 sql = '''
 CREATE TABLE IF NOT EXISTS records (
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -35,7 +36,7 @@ CREATE TABLE IF NOT EXISTS records (
 	date TEXT,
 	lat NUMERIC,
 	lon NUMERIC,
-    UNIQUE (sitename,county)
+    UNIQUE (sitename,date)
 );
 '''
 
@@ -49,6 +50,8 @@ cursor.close()
 conn.close()
 
 ### STEP.5-匯入資料
+#####使用INSERT OR REPLACE，當發生重複時覆蓋原本的記錄
+######也可以使用 INSERT OR IGNORE，忽略重複的值
 insertSQL = '''
 INSERT OR REPLACE INTO records(sitename,county,aqi,status,pm25,date,lat,lon)
 VALUES (?,?,?,?,?,?,?,?)
