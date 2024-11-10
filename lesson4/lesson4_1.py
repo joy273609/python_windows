@@ -25,7 +25,7 @@
 
 
 # ---------------------------------------------------------------
-#利用main( )呼叫程式
+#利用main( )呼叫程式，適合小型或基礎的 tkinter 應用。
 # import tkinter as tk
 
 # def main():
@@ -44,6 +44,8 @@
 # ---------------------------------------------------------------    
 import tkinter as tk
 
+#定義了一個名為 Window 的類別，並繼承了 tk.Tk。
+#tk.Tk 是 tkinter 中的主要類別，代表應用程式的主視窗
 class Window(tk.Tk):
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
