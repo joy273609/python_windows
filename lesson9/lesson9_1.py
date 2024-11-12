@@ -57,6 +57,7 @@ class Window(ThemedTk):
         columns = ('date', 'county', 'sitename','aqi', 'pm25','status','lat','lon')
 
         self.tree = ttk.Treeview(rightFrame, columns=columns, show='headings')
+        self.tree.bind('<<TreeviewSelect>>',self.item_selected)
         # define headings
         self.tree.heading('date', text='日期')
         self.tree.heading('county', text='縣市')
@@ -84,6 +85,9 @@ class Window(ThemedTk):
         bottomFrame.pack()
             #==========end bottomFrame==========
 
+
+
+
     def county_selected(self,event):
         selected = self.selected_county.get()
         sitenames=datasource.get_sitename(county=selected)
@@ -92,6 +96,9 @@ class Window(ThemedTk):
             self.sitenameFrame.destroy()
         self.sitenameFrame=view.SitenameFrame(master=self.selectedFrame,sitenames=sitenames,radio_controll=self.radio_button_click)
         self.sitenameFrame.pack()
+
+
+
 
     def radio_button_click(self,selected_sitename:str):
         '''
@@ -106,7 +113,15 @@ class Window(ThemedTk):
         for record in selected_data:
             self.tree.insert("", "end", values=record)
 
-        
+    def item_selected(self,event):
+        for selected_item in self.tree.selection():
+            record = self.tree.item(selected_item)
+            print(record['values'])
+            dialog = view.MyCustomDialog(self, title="自定義對話框")
+
+
+
+
 def main():
     datasource.download_data() #下載至資料庫
     window = Window(theme="arc")
