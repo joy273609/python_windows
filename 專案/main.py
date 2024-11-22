@@ -5,9 +5,9 @@ from tkinter import ttk
 class Window(tk.Tk):
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
-        self.title("我的專題")
+        self.title("寵物登記數預測工具")
         self.geometry('500x300')
-        message=ttk.Label(self,text="專題名稱")
+        message=ttk.Label(self,text="寵物登記數預測工具")
         message.pack()
 
 def main():
