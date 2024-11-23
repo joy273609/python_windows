@@ -13,7 +13,7 @@ class DataManager:
             county_data = df[df['County'] == county]
             self.pet_data[county] = [
                 (row['Year'], row['County'], row['Registrations'], 
-                row['Deregistrations'], row['Neutered'], row['Neutering Rate'])
+                 row['Deregistrations'], row['Neutered'], row['Neutering Rate'])
                 for _, row in county_data.iterrows()
             ]
 
