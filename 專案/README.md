@@ -30,6 +30,6 @@
 允許使用者選擇地區，選擇地區後，模型會自動填入該地區2009至2013的登記數量、絕育數量、除戶數量和絕育率之等數據。  
   
 地區登記及絕育趨勢圖：顯示過去幾年該地區的寵物登記數趨勢圖，幫助使用者了解該地區的長期變化。  
-![完成示意圖](C:\Users\user\Documents\GitHub\python_windows\專案\README_img\截圖 2024-11-25 上午8.53.49.png)  
-![觀看**台北市**往年的登記數據](C:\Users\user\Documents\GitHub\python_windows\專案\README_img\截圖 2024-11-25 上午8.54.48.png)  
-![觀看**高雄市**往年的登記數據](C:\Users\user\Documents\GitHub\python_windows\專案\README_img\截圖 2024-11-25 上午8.55.07.png)  
+![完成示意圖](專案\README_img\截圖 2024-11-25 上午8.53.49.png)  
+![觀看**台北市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.54.48.png)  
+![觀看**高雄市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.55.07.png)  
