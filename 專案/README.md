@@ -60,8 +60,8 @@
 利用 *src.data.data_source* 匯入資料管理器，處理寵物登記與絕育相關的數據。
 
 
-
-###**台北市**往年的登記數據
+## 七、完成示意圖 
+**台北市**往年的登記數據
 ![觀看**台北市**往年的登記數據](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.54.48.png?raw=true)  
-###**高雄市**往年的登記數據
+**高雄市**往年的登記數據
 ![觀看**高雄市**往年的登記數據](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.55.07.png?raw=true)  
