@@ -8,27 +8,28 @@
 預測未來幾年犬隻登記數量的變化，分析登記數量的增長或下降趨勢，以了解寵物登記率的變動。
 
 ## 五、資料來源
-[寵物登記管理資訊網](https://www.pet.gov.tw/Web/O302.aspx)
+[寵物登記管理資訊網](https://www.pet.gov.tw/Web/O302.aspx)  
 使用農業部公開資訊網站
 
 ## 六、程式設計
 ### 資料蒐集
 1. **_selenium_**
-* 利用*selenium*進行網頁自動化操作
-* 利用*webdriver*控制瀏覽器的核心
-* 利用*Service*管理瀏覽器驅動程式（例如 ChromeDriver）。
-* 利用*By*定位網頁元素的方法（如使用 class name 或 id）。
-* 利用*WebDriverWait*和*EC*設置動態等待條件
+* 利用 *selenium* 進行網頁自動化操作
+* 利用 *webdriver* 控制瀏覽器的核心
+* 利用 *Service* 管理瀏覽器驅動程式（例如 ChromeDriver）。
+* 利用 *By* 定位網頁元素的方法（如使用 class name 或 id）。
+* 利用 *WebDriverWait* 和 *EC* 設置動態等待條件
 
 2. **_BeautifulSoup_**
-* 利用*BeautifulSoup*進行html網頁架構分析，便於提取特定部分內容。
+* 利用 *BeautifulSoup* 進行html網頁架構分析，便於提取特定部分內容。
 
 3. **_pandas_**
-* 利用*pandas*處理表格數據，將列表資料轉換成表格DataFrame，最後導出 CSV 文件。
+* 利用 *pandas* 處理表格數據，將列表資料轉換成表格DataFrame，最後導出 CSV 文件。
 
 ### GUI介面設計
 允許使用者選擇地區，選擇地區後，模型會自動填入該地區2009至2013的登記數量、絕育數量、除戶數量和絕育率之等數據。  
-地區登記及絕育趨勢圖：顯示過去幾年該地區的寵物登記數趨勢圖，幫助使用者了解該地區的長期變化。
-![完成示意圖](專案\README_img\截圖 2024-11-25 上午8.53.49.png)
-![觀看**台北市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.54.48.png)
-![觀看**高雄市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.55.07.png)
+  
+地區登記及絕育趨勢圖：顯示過去幾年該地區的寵物登記數趨勢圖，幫助使用者了解該地區的長期變化。  
+![完成示意圖](C:\Users\user\Documents\GitHub\python_windows\專案\README_img\截圖 2024-11-25 上午8.53.49.png)  
+![觀看**台北市**往年的登記數據](C:\Users\user\Documents\GitHub\python_windows\專案\README_img\截圖 2024-11-25 上午8.54.48.png)  
+![觀看**高雄市**往年的登記數據](C:\Users\user\Documents\GitHub\python_windows\專案\README_img\截圖 2024-11-25 上午8.55.07.png)  
