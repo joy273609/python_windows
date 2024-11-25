@@ -13,17 +13,17 @@
 
 ## 六、程式設計
 ### 資料蒐集
-1. **_selenium_**
+1. **selenium**
 * 利用 *selenium* 進行網頁自動化操作
 * 利用 *webdriver* 控制瀏覽器的核心
 * 利用 *Service* 管理瀏覽器驅動程式（例如 ChromeDriver）。
 * 利用 *By* 定位網頁元素的方法（如使用 class name 或 id）。
 * 利用 *WebDriverWait* 和 *EC* 設置動態等待條件
 
-2. **_BeautifulSoup_**
+2. **BeautifulSoup**
 * 利用 *BeautifulSoup* 進行html網頁架構分析，便於提取特定部分內容。
 
-3. **_pandas_**
+3. **pandas**
 * 利用 *pandas* 處理表格數據，將列表資料轉換成表格DataFrame，最後導出 CSV 文件。
 
 ### GUI介面設計
