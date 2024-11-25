@@ -1,6 +1,7 @@
 # 寵物登記數預測工具  
-## 一、專案名稱：寵物登記數預測工具  
-![完成示意圖](專案\README_img\截圖 2024-11-25 上午8.53.49.png)
+## 一、專案名稱：寵物登記數預測工具 
+預設畫面->全臺往年寵物登記趨勢
+![專案/README_img/截圖 2024-11-25 上午8.53.49.png](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.53.49.png?raw=true)
 ## 二、專案組員：周禹彤、呂安杰  
 ## 三、專案網址  
 [寵物登記數預測工具 Git Hub 連結](https://github.com/roberthsu2003/__2024_09_04_tvdi__/tree/main/%E5%AD%B8%E5%93%A1%E4%BD%9C%E6%A5%AD/%E5%AF%B5%E7%89%A9%E7%99%BB%E8%A8%98%E6%95%B8%E9%A0%90%E6%B8%AC%E5%B7%A5%E5%85%B7_%E5%91%A8%E7%A6%B9%E5%BD%A4%E3%80%81%E5%91%82%E5%AE%89%E6%9D%B0)
@@ -59,7 +60,8 @@
 利用 *src.data.data_source* 匯入資料管理器，處理寵物登記與絕育相關的數據。
 
 
-
-
-![觀看**台北市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.54.48.png)  
-![觀看**高雄市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.55.07.png)  
+## 七、完成示意圖 
+**臺北市**往年的登記數據
+![觀看**臺北市**往年的登記數據](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.54.48.png?raw=true)  
+**高雄市**往年的登記數據
+![觀看**高雄市**往年的登記數據](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.55.07.png?raw=true)  
