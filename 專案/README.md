@@ -61,5 +61,5 @@
 
 
 
-![觀看**台北市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.54.48.png)  
-![觀看**高雄市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.55.07.png)  
+![觀看**台北市**往年的登記數據](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.54.48.png?raw=true)  
+![觀看**高雄市**往年的登記數據](https://github.com/joy273609/python_windows/blob/main/%E5%B0%88%E6%A1%88/README_img/%E6%88%AA%E5%9C%96%202024-11-25%20%E4%B8%8A%E5%8D%888.55.07.png?raw=true)  
