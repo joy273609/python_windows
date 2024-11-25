@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+#typing用於型別註解，Callable 表示可調用對象（如函數），Dict 表示字典，Optional 表示可為 None 的變數
 from typing import Callable, Dict, Optional
 import tkintermapview
 

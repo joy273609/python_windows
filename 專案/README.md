@@ -10,7 +10,7 @@
 
 ## 五、資料來源
 [寵物登記管理資訊網](https://www.pet.gov.tw/Web/O302.aspx)  
-使用農業部公開資訊網站
+使用農業部公開資訊網站  
 
 ## 六、程式設計
 ### 資料蒐集
@@ -29,8 +29,37 @@
 
 ### GUI介面設計
 允許使用者選擇地區，選擇地區後，模型會自動填入該地區2009至2013的登記數量、絕育數量、除戶數量和絕育率之等數據。  
-  
 地區登記及絕育趨勢圖：顯示過去幾年該地區的寵物登記數趨勢圖，幫助使用者了解該地區的長期變化。  
+
+1. **tkinter** 和 **ttk**
+ * 利用 *tkinter* 和 *ttk* 建構主視窗界面
+ * 利用 *tkintermapview*  顯示地圖和互動功能的第三方庫
+ * 利用 *ttk.Treeview* 顯示年度統計數據
+
+2. **map_renderer**
+ * 利用 *TaiwanMapRenderer* 顯示台灣地圖
+ * 利用 *TaiwanMapRenderer* 為每個縣市設定座標、建立地圖標記
+ * 利用 *TaiwanMapRenderer* 設定使用者點擊觸發事件
+ * 利用 *TaiwanMapRenderer* 點擊時的動態改變標記狀態及地圖視角
+ * 利用 *TaiwanMapRenderer* 進行資源管理，在跳轉下一個觸發事件時，會清除先前所有紀錄
+
+3. **matplotlib**
+ * 利用 *matplotlib* 繪製圖表
+ * 利用 *plt.rcParams* 設定中文介面
+ * 利用 *FigureCanvasTkAgg* 將 Matplotlib 圖表嵌入到 Tkinter 的 GUI 應用程式中
+
+4. **numpy**
+利用 *np.divide* 計算絕育數與登記數的比率
+
+5. **src.ui.analysis_view**
+ * 利用 *src.ui.analysis_view* 匯入分析視圖模組
+ * 利用 *AnalysisView* 顯示數據分析內容
+ 
+6. **src.data.data_source** 
+利用 *src.data.data_source* 匯入資料管理器，處理寵物登記與絕育相關的數據。
+
+
+
 
 ![觀看**台北市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.54.48.png)  
 ![觀看**高雄市**往年的登記數據](專案\README_img\截圖 2024-11-25 上午8.55.07.png)  

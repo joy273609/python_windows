@@ -19,7 +19,9 @@ class AnalysisView(ttk.Frame):
             data_manager: 資料管理器實例
         """
         super().__init__(master)
+        #資料管理器，提供數據查詢和處理功能
         self.data_manager = data_manager
+        #確保 _update_display 方法在多執行緒中執行安全。
         self._update_lock = threading.Lock()
         
         # 設定matplotlib中文介面字型
