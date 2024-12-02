@@ -1,0 +1,15 @@
+.fs-4 {
+    font-size: calc(2rem + .3vw) !important;
+    color: tomato;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing:3px;
+}
+
+.nav-pills .nav-link {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 2px;}
+
+.text-body-secondary {
+        font-weight: bolder;
+        font-size: 12px;
+}
